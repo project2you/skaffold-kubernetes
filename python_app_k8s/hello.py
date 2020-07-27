@@ -13,3 +13,8 @@ def hello():
 @app.route('/fun')
 def fun():
   return emoji.emojize('Python development with Skaffold is :thumbs_up:')
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host='0.0.0.0', port=8000)
+    
